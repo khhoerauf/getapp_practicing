@@ -1,25 +1,22 @@
-import { path } from "../../support/serp";
+import { 
+  noncanonical_path,
+  canonical_path,
+  domain } from "../../support/serp";
 
 
-describe('SERP API Response for ${path}',function (){
+canonical_path.forEach((canonical_path) => {
+describe('Verify SERP API properities for canonical url' ,function (){
 
-    it('GET',function(){
-      cy.request(`/${path}`)
-        .then(function(res){
-        
+    it(`${canonical_path}`,function(){
+      cy.request(`${domain}api/${canonical_path}`)
+        .then(function(res){        
         expect(res.status).equal(200)
-
-        expect(res.body)
-          .has.property('route_name', 'serp_category')
-        expect(res.body)
-          .has.property('buyers_guide', null)
-        expect(res.body.head.link_rel[0])
-          .has.property('url', 'https://pr0000.gappdev.com/collaboration-software/calendar/')
-        expect(res.body.head.link_rel[0])
-          .has.property('rel', 'canonical')
-
+        expect(res.body.head.meta).has.property('robots', null)
+        expect(res.body.head.link_rel[0]).has.property('url', `${domain}${canonical_path}`)
+        expect(res.body.head.link_rel[0]).has.property('rel', 'canonical')
       })
     })
+  });
 });
 
  
