@@ -1,5 +1,3 @@
-export const domain = Cypress.config().baseUrl;
-
 // No canonical // Robot content=`noindex,follow`
 export const noCanonicalNoIndexFollow = [
     // Pricing models > Subscription based & One time license

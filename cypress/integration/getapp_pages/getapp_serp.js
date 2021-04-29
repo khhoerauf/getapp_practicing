@@ -1,12 +1,12 @@
 import { 
   noCanonicalNoIndexFollow,
   yesCanonicalNoRobot,
-  noCanonicalNoIndexNoFollow,
-  domain } from "../../support/serp";
+  noCanonicalNoIndexNoFollow } from "../../support/testdata/serp";
+import {domain} from "../../support/testbase"; 
 
 
 yesCanonicalNoRobot.forEach((yesCanonicalNoRobot) => {
-describe.only('Verify SERP API properities for canonical path' ,function (){
+describe('Verify SERP API properities for canonical path' ,function (){
 
     it(`${yesCanonicalNoRobot}`,function(){
       cy.request(`${domain}api/${yesCanonicalNoRobot}`)
@@ -35,7 +35,7 @@ noCanonicalNoIndexFollow.forEach((noCanonicalNoIndexFollow) => {
   });
 
 noCanonicalNoIndexNoFollow.forEach((noCanonicalNoIndexNoFollow) => {
-    describe.only('Verify SERP API properities for noncanonical path' ,function (){
+    describe('Verify SERP API properities for noncanonical path' ,function (){
     
         it(`${noCanonicalNoIndexNoFollow}`,function(){
           cy.request(`${domain}api/${noCanonicalNoIndexNoFollow}`)
