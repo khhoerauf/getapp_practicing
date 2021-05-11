@@ -1,8 +1,8 @@
-import { yesCanonical } from "../../support/testdata/compare";
+import { yesCanonical, noCanonical } from "../../support/testdata/compare";
 import {domain} from "../../support/testbase"; 
   
 yesCanonical.forEach((yesCanonical) => {
-    describe('Verify SERP API properities for canonical path' ,function (){
+    describe('Verify API properities for canonical path' ,function (){
     
         it(`${yesCanonical}`,function(){
           cy.request(`${domain}api/${yesCanonical}`)
@@ -13,6 +13,19 @@ yesCanonical.forEach((yesCanonical) => {
           })
         })
       });
+});
+
+noCanonical.forEach((noCanonical) => {
+  describe('Verify API properities for nocanonical path', function (){
+
+    it(`${noCanonical}`,function(){
+      cy.request(`${domain}api/${noCanonical}`)
+        .then(function(res){        
+        expect(res.status).equal(200)
+        expect(res.body.head.link_rel).to.be.empty
+      })
+    })
+  });
 });
 
 
