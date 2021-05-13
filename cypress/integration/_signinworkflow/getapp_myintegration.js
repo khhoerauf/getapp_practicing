@@ -20,8 +20,7 @@ describe(`dekstop - profile/onboarding/my-integrations/`, () => {
        cy.get(':nth-child(12) > .col-12 > .btn') 
         .click();
         cy.get("[class='profile-my-integrations-listing-card-container']")
-        .should('exist')
-        .
+        .should('exist');
        cy.get('.popular-integrations-headline')
         .should('not.exist');
        cy.get("[class='integration-card mb-1']") 

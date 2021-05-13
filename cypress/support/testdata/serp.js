@@ -56,7 +56,10 @@ export const noCanonicalNoIndexFollow = [
     `collaboration-software/remote-work/?geographies_slug%5B%5D=germany&typecustomers_slug%5B%5D=large-enterprises&pricingcategories_slug%5B%5D=free-trial&tag_slug%5B%5D=api&integrated_with_slug=microsoft-outlook&sort=relevance`
   ];
   
-
+  export const specialCharacter = [
+    `it-management-software/application-lifecycle-management/f/billing-invoicing/`
+  ];
+  
 /*
 `
 
