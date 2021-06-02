@@ -1,6 +1,8 @@
-const sessionLinkedIn = `BAh7DUkiD3Nlc3Npb25faWQGOgZFVG86HVJhY2s6OlNlc3Npb246OlNlc3Npb25JZAY6D0BwdWJsaWNfaWRJIkU5NWEyZTFiOTYzZjdmNzQwOTljZjdiZjhiYWY5YzI1YjhmNjljOGRiNGMxMDk3NjExM2VmZTRjNzgzOWRhNWRjBjsARkkiD2ZpcnN0X3NlZW4GOwBGSSIeMjAyMS0wNi0wMiAwNzozNjozOCArMDAwMAY7AEZJIgtsb2NhbGUGOwBGSSIHZW4GOwBUSSIRZy14c3JmLXRva2VuBjsAVEkiHURKayttNWMrc3d6T2YrVEJOM1RndHc9PQY7AEZJIg9jc3JmLnRva2VuBjsAVEkiMFVBNWZGc3I1VHJXQzhIN05rUjVuRDF0VmlmWFljMHI2aVgxUDE1Q0VpU1EGOwBGSSIJY3VpZAY7AEZJIg9DSll1TkpoTHpwBjsAVEkiFmNvbW11bml0eV91c2VyX2lkBjsARmkDEA0GSSIKZmxhc2gGOwBGewA%3D--aff8a295aa5916c90e8c77409e6a02ce63587b91`
-const sessionGoogle = `BAh7DUkiD3Nlc3Npb25faWQGOgZFVG86HVJhY2s6OlNlc3Npb246OlNlc3Npb25JZAY6D0BwdWJsaWNfaWRJIkU5NWEyZTFiOTYzZjdmNzQwOTljZjdiZjhiYWY5YzI1YjhmNjljOGRiNGMxMDk3NjExM2VmZTRjNzgzOWRhNWRjBjsARkkiD2ZpcnN0X3NlZW4GOwBGSSIeMjAyMS0wNi0wMiAwNzozNjozOCArMDAwMAY7AEZJIgtsb2NhbGUGOwBGSSIHZW4GOwBUSSIRZy14c3JmLXRva2VuBjsAVEkiHUZ2cUtWYmdlajdEcjc5UTN6eHlKRXc9PQY7AEZJIg9jc3JmLnRva2VuBjsAVEkiMFVBNWZGc3I1VHJXQzhIN05rUjVuRDF0VmlmWFljMHI2aVgxUDE1Q0VpU1EGOwBGSSIKZmxhc2gGOwBGewBJIgljdWlkBjsARkkiGjExMjczNzk5NjA3NTkzMjMyNDg0OAY7AFRJIhZjb21tdW5pdHlfdXNlcl9pZAY7AEZpA%2FsCBg%3D%3D--9e68501e9fd8317e8f918970907dd8718b10c2a7`
+const sessionLinkedIn = `BAh7DUkiD3Nlc3Npb25faWQGOgZFVG86HVJhY2s6OlNlc3Npb246OlNlc3Npb25JZAY6D0BwdWJsaWNfaWRJIkU0N2E0Y2FiYzMwM2Q1YzI5YTNiNjlmYjQ5MTgyZDJiZTM5N2YyMmJlZjNkOTU2NmExNDczZDc0YTNkOGU2MDJiBjsARkkiD2ZpcnN0X3NlZW4GOwBGSSIeMjAyMS0wNi0wMiAxNTozOTowMCArMDAwMAY7AEZJIgtsb2NhbGUGOwBGSSIHZW4GOwBUSSIRZy14c3JmLXRva2VuBjsAVEkiHWplc2tacUNYeTlhQ21MVnlEL0tGb0E9PQY7AEZJIhRsYXN0X2NhdGVnb3JpZXMGOwBGWwZpAkwBSSIWY29tbXVuaXR5X3VzZXJfaWQGOwBGaQMRDQZJIg9jc3JmLnRva2VuBjsAVEkiMG5KaHlRN21fb3lIT1hENVVxdk5JdWRkWXBrUGlmWmdGdFZlVVZxTUh4XzAGOwBGSSIKZmxhc2gGOwBGewA%3D--41e52bc495734cef899903a0393c8e9b59264152`
+const sessionGoogle = `BAh7DUkiD3Nlc3Npb25faWQGOgZFVG86HVJhY2s6OlNlc3Npb246OlNlc3Npb25JZAY6D0BwdWJsaWNfaWRJIkU0N2E0Y2FiYzMwM2Q1YzI5YTNiNjlmYjQ5MTgyZDJiZTM5N2YyMmJlZjNkOTU2NmExNDczZDc0YTNkOGU2MDJiBjsARkkiD2ZpcnN0X3NlZW4GOwBGSSIeMjAyMS0wNi0wMiAxNTozOTowMCArMDAwMAY7AEZJIgtsb2NhbGUGOwBGSSIHZW4GOwBUSSIRZy14c3JmLXRva2VuBjsAVEkiHXIvNTJHN2NhakhxKzh0MEUvL0Q3Y2c9PQY7AEZJIhRsYXN0X2NhdGVnb3JpZXMGOwBGWwZpAkwBSSIPY3NyZi50b2tlbgY7AFRJIjBuSmh5UTdtX295SE9YRDVVcXZOSXVkZFlwa1BpZlpnRnRWZVVWcU1IeF8wBjsARkkiCmZsYXNoBjsARnsASSIWY29tbXVuaXR5X3VzZXJfaWQGOwBGaQMRDQY%3D--435fe9e09d469bc18a762b511f57898f1e2eda38`
 const path = 'profile/me'
+const pathSERP = '/project-management-planning-software/project-management/'
+const saveIcon = '[data-testid="product-info-card_saved-icon"]'
 
 describe(`desktop - /profile/me`, () => {
   
@@ -14,5 +16,55 @@ describe(`desktop - /profile/me`, () => {
 
         cy.setCookie(`getapp.session`, sessionGoogle)
         cy.visit(path)
-    })  
+    })
+    
+    it(`Save icon from SERP > sessionGoogle`, () => {
+        cy.setCookie(`getapp.session`, sessionLinkedIn)
+        cy.visit(pathSERP)
+        cy.get(saveIcon).each(($el, $index) => {
+            if($index == 5){
+                return false;
+            }
+            cy.wrap($el)
+              .wait(1000)
+              .click()
+        })
+
+        cy.get('[class*="UserSignedInButton-root-"]')
+          .wait(1000)
+        .click()
+        cy.contains("My profile").click() 
+        cy.get('#save-button').click({force: true}) 
+        
+        cy.get('.top-sticky').invoke('css', 'visibility', 'hidden')   
+        cy.get('#secondary-header').invoke('css', 'visibility', 'hidden')
+        cy.get('#good').invoke('css', 'visibility', 'hidden')
+   
+        cy.get('#save-button').screenshot()
+    })
+
+    it(`Save icon from SERP > sessionLinkedIn`, () => {
+        cy.setCookie(`getapp.session`, sessionGoogle)
+        cy.visit(pathSERP)
+        cy.get(saveIcon).each(($el, $index) => {
+            if($index == 5){
+                return false;
+            }
+            cy.wrap($el)
+              .wait(1000)
+              .click()
+        })
+        
+        cy.get('[class*="UserSignedInButton-root-"]')
+          .wait(1000)
+          .click()
+        cy.contains("My profile").click()
+        cy.get('#save-button').click()   
+        
+        cy.get('.top-sticky').invoke('css', 'visibility', 'hidden')   
+        cy.get('#secondary-header').invoke('css', 'visibility', 'hidden')
+        cy.get('#good').invoke('css', 'visibility', 'hidden')
+   
+        cy.get('#save-button').screenshot()
+    })
 })
