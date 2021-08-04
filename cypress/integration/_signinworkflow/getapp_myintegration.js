@@ -4,26 +4,22 @@ const path = 'profile/onboarding/my-integrations/'
 describe(`dekstop - profile/onboarding/my-integrations/`, () => {
     it(`Verify if steps in recommandaion works`, () => {
 
-        cy.setCookie(`getapp.session`, session)
-        cy.visit(path, 
-        {
-          qs: { skipBot: '2' },
-          headers: { 'user-agent':'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/88.0.4324.96 Safari/537.36',},
-        })
+      cy.setCookie(`getapp.session`, session)
+      cy.visit(path)
 
-       cy.get('.onboarding-my-recommendations-header-lets-do-it-btn')
+      cy.get('.onboarding-my-recommendations-header-lets-do-it-btn')
         .click();
-        cy.get('#onboarding-recommendations-step1-submit-btn')
+      cy.get('#onboarding-recommendations-step1-submit-btn')
         .click();
-       cy.get('#onboarding-recommendations-step2-submit-btn')
+      cy.get('#onboarding-recommendations-step2-submit-btn')
         .click();
-       cy.get(':nth-child(12) > .col-12 > .btn') 
+      cy.get(':nth-child(12) > .col-12 > .btn') 
         .click();
-        cy.get("[class='profile-my-integrations-listing-card-container']")
+      cy.get("[class='profile-my-integrations-listing-card-container']")
         .should('exist');
-       cy.get('.popular-integrations-headline')
+      cy.get('.popular-integrations-headline')
         .should('not.exist');
-       cy.get("[class='integration-card mb-1']") 
+      cy.get("[class='integration-card mb-1']") 
        .should('not.exist');
     })
 });

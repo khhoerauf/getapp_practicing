@@ -1,3 +1,5 @@
 {
-    "baseUrl" : "https://pr0000.gappdev.com/"
+    "baseUrl" : "https://pr0000.gappdev.com/",
+    "viewportWidth" : 1980,
+    "viewpoortHeight" : 1080
 }
